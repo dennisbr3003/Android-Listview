@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/blobart_selection_list_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ImageView
+        android:id="@+id/imageview_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="false"
+        android:contentDescription="@string/in_out_of_stock"
+        android:padding="10dp"
+        app:srcCompat="@mipmap/in_stock" />
+
+    <TextView
+        android:id="@+id/textview_abbreviation"
+        style="@style/blobart_list_item_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_toEndOf="@id/imageview_icon"
+        android:text="@string/widget_default_abbr" />
+
+    <TextView
+        android:id="@+id/textview_decsription"
+        style="@style/blobart_list_item_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview_abbreviation"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_toEndOf="@id/imageview_icon"
+        android:text="@string/widget_default_descr" />
+
+    <TextView
+        android:id="@+id/textview_quantity"
+        style="@style/blobart_list_item_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview_decsription"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toEndOf="@id/imageview_icon"
+        android:text="@string/quantity" />
+
+</RelativeLayout>

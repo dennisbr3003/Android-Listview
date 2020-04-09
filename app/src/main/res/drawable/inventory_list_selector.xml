@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- This will help effectuate color changes by clicking on a list item -->
+    <item android:state_pressed="true">
+        <color android:color="#cdc8b1" /></item>
+    <item>
+        <color android:color="#eee8dc" /></item> <!-- default color -->
+</selector>

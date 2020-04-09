@@ -47,7 +47,7 @@ public class InventoryAdapter extends BaseAdapter implements ListAdapter {
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         // Getting the XML layout in...
         assert inflater != null;
-        @SuppressLint("ViewHolder") View view = inflater.inflate(R.layout.inentory_list_item, null);
+        @SuppressLint("ViewHolder") View view = inflater.inflate(R.layout.inventory_list_item_rel, null);
 
         //Get the inventory item you want to display
         Inventory inventory_item = inventory_adapter_list.get(position);
